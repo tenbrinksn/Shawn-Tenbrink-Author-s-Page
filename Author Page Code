@@ -43,12 +43,8 @@
                 
                 <img src="diplomatic.jpg" alt="Diplomatic Blood for Trade cover" class="w-full md:w-3/4 mb-8 shadow-2xl border border-slate-100">
                 
-                <p class="text-xl leading-relaxed mb-6 text-slate-700 font-bold">
-                    The Forgotten Price of Opening Japan
-                </p>
-                <p class="text-lg leading-relaxed mb-6 text-slate-700">
-                    A meticulous reconstruction of the life and assassination of Henry Heusken, the first U.S. diplomat killed in the line of duty. Tenbrink transforms historical records into an immersive narrative of 19th-century Japan.
-                </p>
+                <p class="text-xl leading-relaxed mb-6 text-slate-700 font-bold">The Forgotten Price of Opening Japan</p>
+                <p class="text-lg leading-relaxed mb-6 text-slate-700">A meticulous reconstruction of the life and assassination of Henry Heusken, the first U.S. diplomat killed in the line of duty.</p>
                 <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="inline-block bg-black text-white px-8 py-3 font-bold hover:bg-slate-700 transition">Pre-order on Amazon</a>
             </section>
 
@@ -57,11 +53,9 @@
             <section class="mb-24">
                 <h2 class="text-3xl font-black mb-8 italic">The Damascus Affair</h2>
                 <div class="flex flex-col md:flex-row gap-8">
-                    <img src="damascus.jpg" alt="The Damascus Affair cover" class="w-48 shadow-lg h-auto object-cover border border-slate-100">
+                    <img src="damscus.jpg" alt="The Damascus Affair cover" class="w-48 shadow-lg h-auto object-cover border border-slate-100">
                     <div>
-                        <p class="text-lg leading-relaxed mb-6 text-slate-700">
-                            Drawing from firsthand experiences in Syria during the Arab Spring—a professional crucible that provided the primary source material for this work.
-                        </p>
+                        <p class="text-lg leading-relaxed mb-6 text-slate-700">Drawing from firsthand experiences in Syria during the Arab Spring.</p>
                         <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="text-blue-600 font-bold underline hover:text-blue-800">Purchase on Amazon</a>
                     </div>
                 </div>
@@ -71,7 +65,7 @@
                 <h2 class="text-2xl font-bold mb-8">About the Author</h2>
                 <div class="prose prose-slate max-w-none text-slate-700 space-y-6 leading-relaxed">
                     <p>For over a decade, Shawn Tenbrink has served on the front lines of U.S. diplomacy, navigating the volatile intersections of geopolitics, conflict, and international commerce. A career Foreign Service Officer with the U.S. Department of State, his work is anchored by a robust academic foundation, including a B.A. in History from Miami University of Ohio and a Master of Laws (LL.M.) in International Economic Law from the University of Kent’s Brussels School of International Studies.</p>
-                    <p>Tenbrink’s professional journey began in the Moroccan Sahara as a Peace Corps volunteer. Living among the historic "mud castles" of the High Atlas Mountains, he practiced the "people-to-people" diplomacy that remains the hallmark of his worldview. This early immersion in cross-cultural negotiation prepared him for a rigorous career in some of the world’s most challenging environments.</p>
+                    <p>Tenbrink’s professional journey began in the Moroccan Sahara as a Peace Corps volunteer. Living among the historic "mud castles" of the High Atlas Mountains, he practiced the "people-to-people" diplomacy that remains the hallmark of his worldview.</p>
                     <p>His diplomatic portfolio is defined by its scale and intensity. During the onset of the Arab Spring, he served in Damascus, Syria—a professional crucible that provided the primary source material for his first book. His subsequent assignments spanned the Middle East and North Africa, including tours in Oman, Morocco, and two critical assignments in Lebanon. Beyond the region, he served in Sydney, Australia, where he met his wife, Tammy. He has also served as a Senior Advisor to the U.S. Special Envoy to Monitor and Combat Antisemitism during and after the events of October 7th.</p>
                     <p>Currently stationed at the Department of State's Foreign Press Center in New York City, Tenbrink dedicates his time outside the office to chronicling the visceral, often overlooked intersections of diplomacy. His historical non-fiction work, <em>Diplomatic Blood for Trade</em>, meticulously reconstructs the life and assassination of Henry Heusken, the first U.S. diplomat killed in the line of duty. Tenbrink is driven by a mission to bring diplomacy out of the shadows, transforming historical records into immersive narratives that prove the past is dead—but it can live on through the stories we tell.</p>
                 </div>
