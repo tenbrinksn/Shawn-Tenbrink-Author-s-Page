@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawn Tenbrink | Author & Diplomat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Georgia', serif; }
+        .sidebar-border { border-right: 1px solid #e2e8f0; }
+        @media (max-width: 768px) { .sidebar-border { border-right: none; border-bottom: 1px solid #e2e8f0; } }
+    </style>
+</head>
+<body class="bg-white text-slate-800">
+
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row min-h-screen">
+        
+        <aside class="w-full md:w-1/3 p-8 sidebar-border bg-slate-50">
+            <h1 class="text-3xl font-black uppercase tracking-tighter mb-4">Shawn Tenbrink</h1>
+            
+            <img src="headshot.jpg" alt="Shawn Tenbrink" class="w-full grayscale hover:grayscale-0 transition duration-500 mb-6 shadow-sm border border-slate-200">
+            
+            <div class="text-sm leading-relaxed space-y-4">
+                <p>For over a decade, Shawn Tenbrink has served on the front lines of U.S. diplomacy, navigating the volatile intersections of geopolitics, conflict, and international commerce.</p>
+                <a href="#full-bio" class="text-blue-600 underline font-bold block mb-6 italic">Read full biography ↓</a>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-slate-200">
+                <h3 class="font-bold text-xs uppercase tracking-widest mb-4 text-slate-400">Links</h3>
+                <div class="flex flex-col space-y-3">
+                    <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="text-sm font-bold text-orange-700 hover:underline">Amazon Author Page →</a>
+                    <a href="https://www.instagram.com/tenbrinksn/" target="_blank" class="text-sm hover:text-blue-600 underline">Instagram</a>
+                    <a href="https://www.facebook.com/shawn.tenbrink.7" target="_blank" class="text-sm hover:text-blue-600 underline">Facebook</a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="w-full md:w-2/3 p-8 md:p-16">
+            
+            <section class="mb-24">
+                <span class="text-xs font-bold text-red-600 uppercase tracking-widest">Coming April 30, 2026</span>
+                <h2 class="text-4xl md:text-5xl font-black mt-2 mb-8 leading-tight italic">Diplomatic Blood for Trade</h2>
+                
+                <img src="diplomatic.jpg" alt="Diplomatic Blood for Trade cover" class="w-full md:w-3/4 mb-8 shadow-2xl border border-slate-100">
+                
+                <p class="text-xl leading-relaxed mb-6 text-slate-700 font-bold">
+                    The Forgotten Price of Opening Japan
+                </p>
+                <p class="text-lg leading-relaxed mb-6 text-slate-700">
+                    A meticulous reconstruction of the life and assassination of Henry Heusken, the first U.S. diplomat killed in the line of duty. Tenbrink transforms historical records into an immersive narrative of 19th-century Japan.
+                </p>
+                <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="inline-block bg-black text-white px-8 py-3 font-bold hover:bg-slate-700 transition">Pre-order on Amazon</a>
+            </section>
+
+            <hr class="my-16 border-slate-100">
+
+            <section class="mb-24">
+                <h2 class="text-3xl font-black mb-8 italic">The Damascus Affair</h2>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <img src="damascus.jpg" alt="The Damascus Affair cover" class="w-48 shadow-lg h-auto object-cover border border-slate-100">
+                    <div>
+                        <p class="text-lg leading-relaxed mb-6 text-slate-700">
+                            Drawing from firsthand experiences in Syria during the Arab Spring—a professional crucible that provided the primary source material for this work.
+                        </p>
+                        <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="text-blue-600 font-bold underline hover:text-blue-800">Purchase on Amazon</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="full-bio" class="pt-16 border-t border-slate-200">
+                <h2 class="text-2xl font-bold mb-8">About the Author</h2>
+                <div class="prose prose-slate max-w-none text-slate-700 space-y-6 leading-relaxed">
+                    <p>For over a decade, Shawn Tenbrink has served on the front lines of U.S. diplomacy, navigating the volatile intersections of geopolitics, conflict, and international commerce. A career Foreign Service Officer with the U.S. Department of State, his work is anchored by a robust academic foundation, including a B.A. in History from Miami University of Ohio and a Master of Laws (LL.M.) in International Economic Law from the University of Kent’s Brussels School of International Studies.</p>
+                    <p>Tenbrink’s professional journey began in the Moroccan Sahara as a Peace Corps volunteer. Living among the historic "mud castles" of the High Atlas Mountains, he practiced the "people-to-people" diplomacy that remains the hallmark of his worldview. This early immersion in cross-cultural negotiation prepared him for a rigorous career in some of the world’s most challenging environments.</p>
+                    <p>His diplomatic portfolio is defined by its scale and intensity. During the onset of the Arab Spring, he served in Damascus, Syria—a professional crucible that provided the primary source material for his first book. His subsequent assignments spanned the Middle East and North Africa, including tours in Oman, Morocco, and two critical assignments in Lebanon. Beyond the region, he served in Sydney, Australia, where he met his wife, Tammy. He has also served as a Senior Advisor to the U.S. Special Envoy to Monitor and Combat Antisemitism during and after the events of October 7th.</p>
+                    <p>Currently stationed at the Department of State's Foreign Press Center in New York City, Tenbrink dedicates his time outside the office to chronicling the visceral, often overlooked intersections of diplomacy. His historical non-fiction work, <em>Diplomatic Blood for Trade</em>, meticulously reconstructs the life and assassination of Henry Heusken, the first U.S. diplomat killed in the line of duty. Tenbrink is driven by a mission to bring diplomacy out of the shadows, transforming historical records into immersive narratives that prove the past is dead—but it can live on through the stories we tell.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-8 px-8 text-center text-xs text-slate-400">
+        <p>&copy; 2026 Shawn Tenbrink. All rights reserved.</p>
+        <p class="mt-2 max-w-2xl mx-auto italic text-[10px]">The views expressed on this website are those of the author and do not necessarily reflect those of the Department of State or the U.S. Government.</p>
+    </footer>
+
+</body>
+</html>
