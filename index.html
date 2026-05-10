@@ -7,28 +7,50 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { font-family: 'Georgia', serif; }
-        .book-card { transition: transform 0.3s ease; }
-        .book-card:hover { transform: translateY(-5px); }
+        body { font-family: 'Georgia', serif; scroll-behavior: smooth; }
+        
+        /* Diplomatic Accent Palette */
+        .bg-diplomatic-navy { background-color: #0f172a; }
+        .text-diplomatic-navy { color: #1e293b; }
+        .border-diplomatic-navy { border-color: #1e293b; }
+        
+        /* Book Card Hover */
+        .book-card { 
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+        }
+        .book-card:hover { 
+            transform: translateY(-8px);
+        }
+
+        /* Subtle Fade-In Animation */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .delay-1 { animation-delay: 0.2s; opacity: 0; }
+        .delay-2 { animation-delay: 0.4s; opacity: 0; }
     </style>
 </head>
 <body class="bg-white text-slate-800">
 
-    <header class="bg-black py-8 mb-12">
-        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+    <header class="bg-diplomatic-navy py-10 mb-12 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center animate-fade-in">
             <div>
                 <h1 class="text-3xl md:text-4xl font-black uppercase tracking-widest text-white">Shawn Tenbrink</h1>
-                <p class="text-slate-400 italic text-sm mt-1">Author & U.S. Diplomat</p>
+                <p class="text-slate-300 italic text-sm mt-1">Author & U.S. Diplomat</p>
             </div>
             <div class="flex space-x-6 text-xl md:text-2xl">
-                <a href="https://www.instagram.com/tenbrinksn/" target="_blank" title="Instagram">
-                    <i class="fa-brands fa-instagram" style="color: #E1306C;"></i>
+                <a href="https://www.instagram.com/tenbrinksn/" target="_blank" class="hover:opacity-75 transition">
+                    <i class="fa-brands fa-instagram text-white"></i>
                 </a>
-                <a href="https://www.facebook.com/shawn.tenbrink.7" target="_blank" title="Facebook">
-                    <i class="fa-brands fa-facebook" style="color: #1877F2;"></i>
+                <a href="https://www.facebook.com/shawn.tenbrink.7" target="_blank" class="hover:opacity-75 transition">
+                    <i class="fa-brands fa-facebook text-white"></i>
                 </a>
-                <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" title="Amazon Author Page">
-                    <i class="fa-brands fa-amazon" style="color: #FF9900;"></i>
+                <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="hover:opacity-75 transition">
+                    <i class="fa-brands fa-amazon text-[#FF9900]"></i>
                 </a>
             </div>
         </div>
@@ -36,55 +58,60 @@
 
     <main class="max-w-6xl mx-auto px-6">
         
-        <section class="flex flex-col md:flex-row gap-12 items-start mb-20">
+        <!-- Biography Section -->
+        <section class="flex flex-col md:flex-row gap-12 items-start mb-24 animate-fade-in delay-1">
             <div class="md:w-2/3 order-2 md:order-1">
-                <h2 class="text-2xl font-bold mb-6 border-b-2 border-black pb-2">Biography</h2>
-                <div class="prose prose-slate text-slate-700 space-y-4 leading-relaxed text-lg">
+                <h2 class="text-2xl font-bold mb-6 border-b-2 border-diplomatic-navy pb-2 uppercase tracking-tight text-diplomatic-navy">Biography</h2>
+                <div class="prose prose-slate text-slate-700 space-y-5 leading-relaxed text-lg">
                     <p>For over a decade, Shawn Tenbrink has operated at the vanguard of American diplomacy, navigating the volatile intersections of geopolitics, conflict, and international commerce. A decorated career Foreign Service Officer with the U.S. Department of State, Tenbrink has been recognized with numerous Superior and Meritorious Honor Awards for his service in the world’s most demanding environments.</p>
                     
-                    <p>His global perspective was forged early; born into a life of transition, he was raised in Indonesia before returning to his father’s roots in Cincinnati, Ohio. This early exposure to diverse cultures served as the prelude to a career defined by high-stakes negotiation. His professional journey began as a Peace Corps volunteer in the Moroccan Sahara, where he lived among the historic "mud castles" of the High Atlas Mountains—an experience that instilled the "people-to-people" diplomacy that remains his hallmark today.</p>
+                    <p>His global perspective was forged early; born into a life of transition, he was raised in Indonesia before returning to his father’s roots in Cincinnati, Ohio. This early exposure to diverse cultures served as the prelude to a career defined by high-stakes negotiation. His professional journey began as a Peace Corps volunteer in the Moroccan Sahara, where he lived among the historic "mud castles" of the High Atlas Mountains.</p>
                     
-                    <p>Tenbrink’s diplomatic portfolio is a testament to resilience and strategic depth. During the onset of the Arab Spring, he served in Damascus, Syria—a professional crucible that became the primary inspiration for his literary work. He further served as a Senior Advisor to the U.S. Special Envoy to Monitor and Combat Antisemitism, a role he held during the critical period surrounding the October 7th attacks, providing vital guidance during the resulting global upheaval. His assignments have spanned the Middle East and North Africa, including pivotal tours in Oman and Morocco, two critical deployments to Lebanon, and a posting in Sydney, Australia.</p>
+                    <p>Tenbrink’s diplomatic portfolio is a testament to resilience and strategic depth. During the onset of the Arab Spring, he served in Damascus, Syria—a professional crucible that became the primary inspiration for his literary work. He further served as a Senior Advisor to the U.S. Special Envoy to Monitor and Combat Antisemitism, providing vital guidance during periods of global upheaval. His assignments have spanned the Middle East and North Africa, including pivotal tours in Oman and Morocco, two critical deployments to Lebanon, and a posting in Sydney, Australia.</p>
                     
                     <p>Currently stationed at the U.S. Foreign Press Center in New York City, Tenbrink is a scholar-practitioner anchored by a Master of Laws (LL.M.) in International Economic Law from the University of Kent’s Brussels School of International Studies and a B.A. in History from Miami University of Ohio.</p>
                     
-                    <p>When not navigating the complexities of international relations, Tenbrink chronicles the visceral, often overlooked human stories behind statecraft. His historical non-fiction work, <em>Diplomatic Blood for Trade</em>, meticulously reconstructs the life and assassination of Henry Heusken—the first U.S. diplomat assassinated in the line of duty—bringing a practitioner’s unique lens to the high-stakes history of the 19th-century opening of Japan.</p>
+                    <p>When not navigating the complexities of international relations, Tenbrink chronicles the visceral human stories behind statecraft. His historical non-fiction work, <em>Diplomatic Blood for Trade</em>, meticulously reconstructs the life and assassination of Henry Heusken—the first U.S. diplomat assassinated in the line of duty.</p>
                 </div>
             </div>
             
             <div class="md:w-1/3 order-1 md:order-2">
-                <img src="headshot.jpg" alt="Shawn Tenbrink" class="w-full shadow-2xl border-4 border-white grayscale hover:grayscale-0 transition duration-500 rounded-sm">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-diplomatic-navy opacity-25 blur group-hover:opacity-50 transition duration-1000"></div>
+                    <img src="headshot.jpg" alt="Shawn Tenbrink" class="relative w-full shadow-2xl border-4 border-white grayscale hover:grayscale-0 transition duration-700 rounded-sm">
+                </div>
             </div>
         </section>
 
-        <section class="mb-20">
-            <h2 class="text-3xl font-black uppercase tracking-widest mb-10 text-center border-y-2 border-black py-6">Featured Works</h2>
+        <!-- Featured Works Section -->
+        <section class="mb-20 animate-fade-in delay-2">
+            <h2 class="text-3xl font-black uppercase tracking-widest mb-12 text-center border-y-2 border-diplomatic-navy py-8 text-diplomatic-navy">Featured Works</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
                 
                 <!-- Diplomatic Blood for Trade Card -->
-                <div class="book-card">
-                    <h3 class="text-2xl font-black mt-2 mb-4 italic">Diplomatic Blood for Trade</h3>
+                <div class="book-card bg-slate-50 p-6 rounded-sm border border-slate-100 shadow-sm">
+                    <h3 class="text-2xl font-black mt-2 mb-4 italic text-diplomatic-navy">Diplomatic Blood for Trade</h3>
                     <img src="diplomatic.jpg" alt="Diplomatic Blood for Trade cover" class="w-full h-auto object-contain shadow-2xl mb-6 border border-slate-200">
                     <p class="text-slate-600 mb-6 leading-relaxed">A meticulous reconstruction of the life and assassination of Henry Heusken, the first U.S. diplomat killed in the line of duty. An immersive narrative of 19th-century Japan.</p>
                     
-                    <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="block text-center bg-black text-white py-4 font-bold hover:bg-slate-800 transition uppercase tracking-widest text-sm mb-4">Purchase on Amazon</a>
+                    <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="block text-center bg-diplomatic-navy text-white py-4 font-bold hover:bg-slate-700 transition uppercase tracking-widest text-sm mb-4 shadow-md">Purchase on Amazon</a>
                     
-                    <a href="https://open.spotify.com/show/3D3jtyyxcpubkOPRE3iwdk" target="_blank" class="block text-center bg-[#1DB954] text-white py-4 font-bold hover:bg-[#1ed760] transition uppercase tracking-widest text-sm">
+                    <a href="https://open.spotify.com/show/3D3jtyyxcpubkOPRE3iwdk" target="_blank" class="block text-center bg-[#1DB954] text-white py-4 font-bold hover:bg-[#1ed760] transition uppercase tracking-widest text-sm shadow-md">
                         <i class="fa-brands fa-spotify mr-2"></i>Listen to the Audiobook
                     </a>
                 </div>
 
                 <!-- The Damascus Affair Card -->
-                <div class="book-card">
-                    <h3 class="text-2xl font-black mt-2 mb-4 italic">The Damascus Affair</h3>
+                <div class="book-card bg-slate-50 p-6 rounded-sm border border-slate-100 shadow-sm">
+                    <h3 class="text-2xl font-black mt-2 mb-4 italic text-diplomatic-navy">The Damascus Affair</h3>
                     <img src="damscus.jpg" alt="The Damascus Affair cover" class="w-full h-auto object-contain shadow-2xl mb-6 border border-slate-200">
                     <p class="text-slate-600 mb-6 leading-relaxed">Drawing from firsthand experiences in Syria during the Arab Spring—a professional crucible that provided the primary source material for this work.</p>
                     
-                    <a href="https://open.spotify.com/show/1XYZz3pYRYmpcKxPuwuqsT?si=3Nz51mzHTo6gCAXQbUJWfg&nd=1&dlsi=ab8d5e9d7e1b4323" target="_blank" class="block text-center bg-[#1DB954] text-white py-4 font-bold hover:bg-[#1ed760] transition uppercase tracking-widest text-sm mb-4">
+                    <a href="https://open.spotify.com/show/1XYZz3pYRYmpcKxPuwuqsT?si=3Nz51mzHTo6gCAXQbUJWfg&nd=1&dlsi=ab8d5e9d7e1b4323" target="_blank" class="block text-center bg-[#1DB954] text-white py-4 font-bold hover:bg-[#1ed760] transition uppercase tracking-widest text-sm mb-4 shadow-md">
                         <i class="fa-brands fa-spotify mr-2"></i>Listen to it on Spotify
                     </a>
 
-                    <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="block text-center border-2 border-black py-4 font-bold hover:bg-slate-100 transition uppercase tracking-widest text-sm">Purchase on Amazon</a>
+                    <a href="https://www.amazon.com/stores/Shawn-Tenbrink/author/B0BWNYBG7W" target="_blank" class="block text-center border-2 border-diplomatic-navy text-diplomatic-navy py-4 font-bold hover:bg-slate-200 transition uppercase tracking-widest text-sm shadow-sm">Purchase on Amazon</a>
                 </div>
 
             </div>
@@ -92,10 +119,10 @@
 
     </main>
 
-    <footer class="bg-black text-white mt-20 py-16 px-6 text-center">
+    <footer class="bg-diplomatic-navy text-white mt-20 py-16 px-6 text-center">
         <div class="max-w-3xl mx-auto">
             <p class="text-sm font-bold uppercase tracking-widest mb-6">&copy; 2026 Shawn Tenbrink</p>
-            <p class="text-xs text-slate-500 italic leading-relaxed">
+            <p class="text-xs text-slate-400 italic leading-relaxed opacity-80">
                 The views expressed on this website are those of the author and do not necessarily reflect those of the Department of State or the U.S. Government.
             </p>
         </div>
